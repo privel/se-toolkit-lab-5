@@ -2,19 +2,29 @@
 
 :{$CADDY_CONTAINER_PORT} {
     handle /items* {
-        reverse_proxy http://app:{$APP_CONTAINER_PORT}
+        reverse_proxy http://app:{$APP_CONTAINER_PORT} {
+            header_up Authorization {http.request.header.Authorization}
+        }
     }
     handle /learners* {
-        reverse_proxy http://app:{$APP_CONTAINER_PORT}
+        reverse_proxy http://app:{$APP_CONTAINER_PORT} {
+            header_up Authorization {http.request.header.Authorization}
+        }
     }
     handle /interactions* {
-        reverse_proxy http://app:{$APP_CONTAINER_PORT}
+        reverse_proxy http://app:{$APP_CONTAINER_PORT} {
+            header_up Authorization {http.request.header.Authorization}
+        }
     }
     handle /pipeline* {
-        reverse_proxy http://app:{$APP_CONTAINER_PORT}
+        reverse_proxy http://app:{$APP_CONTAINER_PORT} {
+            header_up Authorization {http.request.header.Authorization}
+        }
     }
     handle /analytics* {
-        reverse_proxy http://app:{$APP_CONTAINER_PORT}
+        reverse_proxy http://app:{$APP_CONTAINER_PORT} {
+            header_up Authorization {http.request.header.Authorization}
+        }
     }
     handle /docs* {
         reverse_proxy http://app:{$APP_CONTAINER_PORT}
