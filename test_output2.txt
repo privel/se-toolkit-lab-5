@@ -1,0 +1,285 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.2, pytest-9.0.2, pluggy-1.6.0 -- C:\codes\programming for UI\dev_toolkit\se-toolkit-lab-5\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: c:\codes\programming for UI\dev_toolkit\se-toolkit-lab-5
+configfile: pyproject.toml
+plugins: anyio-4.12.1, asyncio-1.3.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 17 items
+
+backend/tests/unit/test_analytics.py::TestScores::test_scores_returns_200 ERROR [  5%]
+backend/tests/unit/test_analytics.py::TestScores::test_scores_returns_four_buckets ERROR [ 11%]
+backend/tests/unit/test_analytics.py::TestScores::test_scores_counts_are_correct ERROR [ 17%]
+backend/tests/unit/test_analytics.py::TestScores::test_scores_excludes_other_labs ERROR [ 23%]
+backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_returns_200 ERROR [ 29%]
+backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_returns_tasks ERROR [ 35%]
+backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_avg_scores ERROR [ 41%]
+backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_has_correct_fields ERROR [ 47%]
+backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_returns_200 ERROR [ 52%]
+backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_has_correct_dates ERROR [ 58%]
+backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_submission_counts ERROR [ 64%]
+backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_ordered_by_date ERROR [ 70%]
+backend/tests/unit/test_analytics.py::TestGroups::test_groups_returns_200 ERROR [ 76%]
+backend/tests/unit/test_analytics.py::TestGroups::test_groups_has_all_groups ERROR [ 82%]
+backend/tests/unit/test_analytics.py::TestGroups::test_groups_student_counts ERROR [ 88%]
+backend/tests/unit/test_analytics.py::TestGroups::test_groups_avg_scores ERROR [ 94%]
+backend/tests/unit/test_analytics.py::TestGroups::test_groups_has_correct_fields ERROR [100%]
+
+=================================== ERRORS ====================================
+____________ ERROR at setup of TestScores.test_scores_returns_200 _____________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+________ ERROR at setup of TestScores.test_scores_returns_four_buckets ________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_________ ERROR at setup of TestScores.test_scores_counts_are_correct _________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+________ ERROR at setup of TestScores.test_scores_excludes_other_labs _________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_________ ERROR at setup of TestPassRates.test_pass_rates_returns_200 _________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+________ ERROR at setup of TestPassRates.test_pass_rates_returns_tasks ________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_________ ERROR at setup of TestPassRates.test_pass_rates_avg_scores __________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_____ ERROR at setup of TestPassRates.test_pass_rates_has_correct_fields ______
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+__________ ERROR at setup of TestTimeline.test_timeline_returns_200 ___________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_______ ERROR at setup of TestTimeline.test_timeline_has_correct_dates ________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_______ ERROR at setup of TestTimeline.test_timeline_submission_counts ________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+________ ERROR at setup of TestTimeline.test_timeline_ordered_by_date _________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+____________ ERROR at setup of TestGroups.test_groups_returns_200 _____________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+___________ ERROR at setup of TestGroups.test_groups_has_all_groups ___________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+___________ ERROR at setup of TestGroups.test_groups_student_counts ___________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_____________ ERROR at setup of TestGroups.test_groups_avg_scores _____________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+_________ ERROR at setup of TestGroups.test_groups_has_correct_fields _________
+backend\tests\unit\test_analytics.py:193: in client
+    from app.main import app
+backend\app\main.py:6: in <module>
+    from app.auth import verify_api_key
+backend\app\auth.py:6: in <module>
+    from app.settings import settings
+backend\app\settings.py:42: in <module>
+    settings = Settings.model_validate({})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+E   DEBUG
+E     Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='release', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.12/v/bool_parsing
+=========================== short test summary info ===========================
+ERROR backend/tests/unit/test_analytics.py::TestScores::test_scores_returns_200
+ERROR backend/tests/unit/test_analytics.py::TestScores::test_scores_returns_four_buckets
+ERROR backend/tests/unit/test_analytics.py::TestScores::test_scores_counts_are_correct
+ERROR backend/tests/unit/test_analytics.py::TestScores::test_scores_excludes_other_labs
+ERROR backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_returns_200
+ERROR backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_returns_tasks
+ERROR backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_avg_scores
+ERROR backend/tests/unit/test_analytics.py::TestPassRates::test_pass_rates_has_correct_fields
+ERROR backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_returns_200
+ERROR backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_has_correct_dates
+ERROR backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_submission_counts
+ERROR backend/tests/unit/test_analytics.py::TestTimeline::test_timeline_ordered_by_date
+ERROR backend/tests/unit/test_analytics.py::TestGroups::test_groups_returns_200
+ERROR backend/tests/unit/test_analytics.py::TestGroups::test_groups_has_all_groups
+ERROR backend/tests/unit/test_analytics.py::TestGroups::test_groups_student_counts
+ERROR backend/tests/unit/test_analytics.py::TestGroups::test_groups_avg_scores
+ERROR backend/tests/unit/test_analytics.py::TestGroups::test_groups_has_correct_fields
+============================= 17 errors in 2.46s ==============================

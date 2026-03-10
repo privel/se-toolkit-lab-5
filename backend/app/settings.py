@@ -33,8 +33,10 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file=".env.secret",
         env_file_encoding="utf-8",
-        case_sensitive=True,
-        extra="allow",
+        case_sensitive=False,
+        extra="ignore",
+        env_prefix="LMS_",
+        populate_by_name=True,
     )
 
 
